@@ -1,0 +1,247 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Naqushab Neyazee}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+\NewEntry{}{\textit{Born in Varanasi,}}{24 October 1994} % Birthplace and date
+
+\NewEntry{email}{\href{mailto:naqushab.neyazee24@gmail.com}{naqushab.neyazee24@gmail.com}} % Email address
+
+\NewEntry{website}{\href{http://naqushab.github.io}{http://naqushab.github.io}} % Personal website
+
+\NewEntry{phone}{(M) +91 87 917 06269\ \ $\cdotp$\ \ (M) +91 98 971 17569} % Phone number(s)
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+\noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+\Description{To contribute to the success of an organization by fully utilizing my skills and knowledge at a position offering continuous growth and development.}\vspace{2em} % Goal text
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Experience}\vspace{1em}
+
+\NewEntry{2014--Present}{Web Developer, {\href{http://www.camplinked.com}{Camplinked}}}
+
+\Description{\MarginText{Camplinked}Front-End and Back-End Developer with the job of handling Camplinked.com, ZHCET's Training and Placement Portal. The work primarily includes programming in PHP, JavaScript, jQuery, and HTML/CSS }
+
+%------------------------------------------------
+
+\NewEntry{2015--Present}{Web Developer, {\href{http://www.reflexivephotography.pe.hu}{Reflexive Photography}}}
+
+\Description{\MarginText{Reflexive Photography}Web Developer and Web Designed for Reflexive Photography Website, College's Photography Magazine.}
+
+%------------------------------------------------
+
+\NewEntry{2015}{Summer Intern, {\href{http://www.angrypawn.com}{AngryPawn}}}
+
+\Description{\MarginText{AngryPawn}Angry Pawn is like the Groupon for online education.My job was to make a login system, develop a credit based system, Analytics of clicks, Mailing Platform, Front-End Improvisation.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2012-2016}{ZHCET, A.M.U.}
+
+\Description{\MarginText{Bachelor of Technology}CPI: 8.4\ \ $\cdotp$\ \ \textit{Upto Sixth Semester}\ \ $\cdotp$\ \ Zakir Hussain College of Engineering and Technology, Aligarh Muslim University.}
+
+%------------------------------------------------
+
+\NewEntry{2010-2012}{St. Michael's Convent School, Gonda}
+
+\Description{\MarginText{Intermediate}Percentage: 86.6\%\ \ $\cdotp$\ \ \textit{Mainstream: Computer}\ \ $\cdotp$\ \ St. Michael's Convent School, ITI Mankapur Colony, Gonda}
+
+%------------------------------------------------
+
+\NewEntry{2009-2010}{St. Michael's Convent School, Gonda}
+
+\Description{\MarginText{Highschool}CGPA: 10\ \ $\cdotp$\ \ \textit{AMUL Vidyashree Awardee}\ \ $\cdotp$\ \ St. Michael's Convent School, ITI Mankapur Colony, Gonda}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Projects}\vspace{1em}
+
+\NewEntry{July 2015}{Note Clipper}
+
+\Description{\MarginText{Note Clipper}Note Clipper is a real time note clipping application build on responsive Google MDL design. The application is made under the Firebase section which is under Google. The application produces real time synchronising with help of Firebase. Login is provided by OAuth by Google, Facebook, Twitter, Github.\\ URL: https://zhcet.firebaseapp.com/}
+
+%------------------------------------------------
+
+\NewEntry{Feb 2015}{Movie Search DataBase}
+
+\Description{\MarginText{Movie Search Database}An online Movie search engine that searches particular websites for specific movies. It is made in PHP language.\\ URL: http://moviesearch.pe.hu/}
+
+%------------------------------------------------
+
+\NewEntry{April 2015}{HEX}
+
+\Description{\MarginText{HEX}HEX is an android arcade game to control blocks for going out of a hexagon. It is built on ONSENUI platform with the help of monaca.\\ URL: http://amzn.com/B00WH4ETNQ/}
+
+%------------------------------------------------
+
+\NewEntry{June 2014}{Alumni Connect Web Applcation}
+
+\Description{\MarginText{Alumni Connect}Alumni Connect was developed in ASP.NET Web Pages, and is used to connect Alumni with the present students of their college.}
+
+%------------------------------------------------
+
+\NewEntry{April 2015}{Network Solutions}
+
+\Description{\MarginText{Network Solutions}Web Designer and Developer of Network Solutions, a website built to make students understand the concepts of Networking Protocols, TCP and UDP.}
+
+%------------------------------------------------
+
+\NewEntry{April 2015}{Easy Connect}
+
+\Description{\MarginText{Easy Connect}Web Developer of an easy connect website which is a secure way of storing file on the internet and can be accessed using two factor authorisation only.}
+
+%------------------------------------------------
+
+\NewEntry{Feb 2015}{Movie Search DataBase}
+
+\Description{\MarginText{Movie Search Database}An online Movie search engine that searches particular websites for specific movies. It is made in PHP language.\\ URL: https://moviesearch.pe.hu/}
+
+%------------------------------------------------
+
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Skills}\vspace{1em}
+
+\Description{\MarginText{Advanced}\textsc{C++}, \textsc{html}, \textsc{css}, \textsc{php}}
+
+\Description{\MarginText{Intermediate}\textsc{python}, \textsc{C}, JavaScript, MySQL}
+
+\Description{\MarginText{Basic}\textsc{java}, Linux, \textsc{asp.net}}
+
+\Description{\MarginText{Frameworks}BootStrap, MaterializeCSS, MDL, Flask}
+
+\Description{\MarginText{IDE}Visual Studio, Code, Brackets, VIm}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Other Information}\vspace{1em}
+
+\Description{\MarginText{Awards}2013\ \ $\cdotp$\ \ HP Education Certificate of Achievement in ASP.NET}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2010\ \ $\cdotp$\ \ AMUL VidyaShree for Excellent Performance in Highschool}
+
+%------------------------------------------------
+
+\vspace{1em}
+
+\Description{\MarginText{Communication Skills}2010\ \ $\cdotp$\ \ Oral Presentation at the California Business Conference}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{May 2015\ \ $\cdotp$\ \ HackerEarth Campus Ambassador}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{April 2015\ \ $\cdotp$\ \ Web Master, ACM Student Chapter}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{December 2014\ \ $\cdotp$\ \ Chairperson, Codechef Campus Chapter}
+
+%------------------------------------------------
+
+\vspace{1em}
+
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Professional Working Proficiency}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{Hindi}}\ \ $\cdotp$\ \ \ Native Proficiency}
+
+
+\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%------------------------------------------------
+
+\Description{\MarginText{Interests}Programming\ \ $\cdotp$\ \ Badminton\ \ $\cdotp$\ \ Internet Surfing\ \ $\cdotp$\ \ Chess\ \ $\cdotp$\ \ Social Networking}
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
