@@ -1,2 +1,2 @@
-# resumeLatex
-My Resume in Latex form.
+# Naqushab Neyazee Resume
+Download Resume of Naqushab Neyazee
